@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HooksApp from './HooksApp';
+import LikesApp from './components/Apps/LikesApp';
+import './component.css';
 
 ReactDOM.render(
 	<div>
-		<HooksApp />
+		<LikesApp />
 	</div>,
 	document.getElementById('root')
 );

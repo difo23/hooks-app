@@ -1,0 +1,20 @@
+body {
+	width: 80%;
+	margin-left: 10%;
+}
+
+hr {
+	background-color: black;
+}
+input:hover {
+	background-color: burlywood;
+}
+input {
+	margin-left: 5%;
+}
+div {
+	margin-top: 5%;
+}
+button:hover {
+	background-color: chartreuse;
+}
