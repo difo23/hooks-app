@@ -1,39 +1,49 @@
 import React, { useState, useEffect } from 'react';
 
+
+
+/** Simulate de user that clic in like button*/
+const getUser = () => {
+    const USERS = [ 'Juan', 'Pedro', 'Josefa', 'Ramón', 'Penelope', 'Alexander', 'Manolo', 'Carmen' ];
+    const RANDOM = Math.floor(Math.random() * USERS.length);
+    return USERS[RANDOM];
+};
+
+
+/** Switch between  the options for likes counter.*/
+const getCounter = (likes) => {
+    if (likes.length === 0) return "Sorry, this doesn't like to anybody!";
+
+    let first, second, thirth, rest;
+
+    switch (likes.length) {
+        case 1:
+            [ first ] = likes;
+            return `${first} likes this!`;
+
+        case 2:
+            [ first, second ] = likes;
+            return `${first} and ${second} like this!`;
+
+        case 3:
+            [ first, second, thirth ] = likes;
+            return `${first}, ${second} and ${thirth} like this!`;
+
+        default:
+            [ first, second, ...rest ] = likes;
+            return `${first}, ${second} and ${rest.length} others like this!`;
+    }
+};
+
+/** Like App component */
 const LikesApp = () => {
-	const [ likes, setLikes ] = useState([]);
+    
+    
+    const [ likes, setLikes ] = useState([]);
 	const [ counter, setCounter ] = useState('');
 
-	const getUser = () => {
-		const USERS = [ 'Juan', 'Pedro', 'Josefa', 'Ramón', 'Penelope', 'Alexander', 'Manolo', 'Carmen' ];
-		const RANDOM = Math.floor(Math.random() * USERS.length);
-		return USERS[RANDOM];
-	};
-
-	const getCounter = (likes) => {
-		if (likes.length === 0) return '';
-
-		let first, second, thirth, rest;
-
-		switch (likes.length) {
-			case 1:
-				[ first ] = likes;
-				return `${first} likes this!`;
-
-			case 2:
-				[ first, second ] = likes;
-				return `${first} and ${second} like this!`;
-
-			case 3:
-				[ first, second, thirth ] = likes;
-				return `${first}, ${second} and ${thirth} like this!`;
-
-			default:
-				[ first, second, ...rest ] = likes;
-				return `${first}, ${second} and ${rest.length} others like this!`;
-		}
-	};
-
+    
+/* useEffect only change de string counter likes when likes array change*/
 	useEffect(
 		() => {
 			const count = getCounter(likes);
