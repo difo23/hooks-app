@@ -12,7 +12,7 @@ ReactDOM.render(
 		<div >
 			<h3> Project #1 100daysofcode: Comments likes with react useState and useEffect hooks</h3>
 			<hr />
-			<LikesApp />
+			{/* <LikesApp /> */}
 		</div> 
 
 		<div >
