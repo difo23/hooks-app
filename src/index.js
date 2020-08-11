@@ -21,6 +21,6 @@ ReactDOM.render(
 			<ContextApp />
 		</div>
 		<hr/>
-	</div>
+	</div>,
 	document.getElementById('root')
 );
