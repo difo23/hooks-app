@@ -9,9 +9,12 @@ const ContextApp = () => {
 
 	
 	return (
+		<div>
+
 		<UserContext.Provider value={{ user, setuser }}>
         	<AppRouter />
 		</UserContext.Provider>
+		</div>
 	);
 };
 
