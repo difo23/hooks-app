@@ -14,13 +14,16 @@ ReactDOM.render(
 			<hr />
 			<LikesApp />
 		</div> 
+		<hr/>
 
 		<div >
 			<h3> Project #2 100daysofcode: Simple login with router-dom, useState, useContext, useHistory hooks in react</h3>
 			<hr />
 			<ContextApp />
 		</div>
+
 		<hr/>
+		
 	</div>,
 	document.getElementById('root')
 );
