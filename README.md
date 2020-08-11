@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Description:
 
-### Day 2 `#the100daysofcode`: Simple app to Likes comments with React hooks.
+
+## Day 2/100: `#the100daysofcode`: Simple app to Likes comments with React hooks.
 August 10, 2020
 
 #### Problem:
