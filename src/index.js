@@ -7,8 +7,8 @@ import './component.css';
 ReactDOM.render(
 	<div className="container">
 
-	<h1>Learning about hooks in react</h1>
-	<hr/>
+		<h1>Learning about hooks in react</h1>
+		<hr/>
 		<div >
 			<h3> Project #1 100daysofcode: Comments likes with react useState and useEffect hooks</h3>
 			<hr />
