@@ -16,7 +16,7 @@ August 10, 2020
 To use useState and useEffect hooks for solution.
 
 
-## Day 3/10: Simple LoginApp with useContext hooks.
+## Day 3/100: Simple LoginApp with useContext hooks.
 
 
 ## Notes:
